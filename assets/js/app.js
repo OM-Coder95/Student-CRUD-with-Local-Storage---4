@@ -12,31 +12,9 @@ const hideTableController = document.getElementById("hideTable");
 
 // Database
 
-let studentArr = [
-  {
-    id: "ST901",
-    rollCode: "IT-2047",
-    specialization: "Frontend Development",
-    availability: "Part Time",
-    portfolio: "Devfolio",
-  },
-  {
-    id: "ST902",
-    rollCode: "CS1189",
-    specialization: "Cloud Computing",
-    availability: "Full Time",
-    portfolio: "GitHub",
-  },
-  {
-    id: "ST903",
-    rollCode: "AI3056",
-    specialization: "Machine Learning",
-    availability: "Weekend",
-    portfolio: "Kaggle",
-  },
-];
+let jsonArr = localStorage.getItem("studentArr");
 
-localStorage.setItem("studentArr", JSON.stringify(studentArr));
+let studentArr = jsonArr ? JSON.parse(jsonArr) : [];
 
 // functions
 
