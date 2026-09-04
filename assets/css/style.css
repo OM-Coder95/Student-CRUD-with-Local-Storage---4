@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #f4f6f9;
+    font-family: Arial, sans-serif;
+}
+
+
+.student-crud-row .heading {
+    background-color: #e3e4e6;
+}
+
+.student-crud-row .heading h1 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #343a40;
+    padding: 10px;
+
+}
+
+.student-crud-row .heading p {
+    margin: 6px 0 0;
+    font-size: 15px;
+    color: #6c757d;
+    padding: 5px;
+}
+
+/* =========================
+   FORM SECTION
+========================= */
+
+.student-form-col {
+    padding: 15px;
+}
+
+.student-form-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Form Header */
+
+.student-form-header {
+    padding: 18px 20px;
+    border: none;
+    background: #343a40;
+    color: white;
+}
+
+.student-form-header h3 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Form Body */
+
+.student-form-body {
+    padding: 25px;
+    background: white;
+}
+
+/* Form Fields */
+
+.form-field label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #343a40;
+}
+
+.form-field .form-control:focus {
+    border-color: #80bdff;
+    box-shadow: 0 0 0 0.15rem rgba(0, 123, 255, 0.15);
+}
+
+/* FORM BUTTONS */
+
+.form-actions {
+    margin-top: 25px;
+}
+
+.form-actions .btn {
+    height: 42px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+
+/* =========================
+   TABLE SECTION
+========================= */
+
+.student-table-col {
+    padding: 15px;
+}
+
+.student-table-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+.student-table-body {
+    padding: 20px;
+    background: white;
+}
+
+/* Table Wrapper */
+
+.student-table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+
+/* =========================
+   TABLE
+========================= */
+
+.student-table thead th {
+    padding: 12px 10px;
+    background: #343a40;
+    color: white;
+    font-size: 14px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.student-table tbody td {
+    padding: 12px 10px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+/* Alternate rows */
+
+.student-table tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+/* Hover */
+
+.student-table tbody tr {
+    transition: 0.2s;
+}
+
+.student-table tbody tr:hover {
+    background: #eef4ff;
+}
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.student-table tbody td:last-child {
+    white-space: nowrap;
+    text-align: center;
+}
+
+.student-table tbody td:last-child .btn {
+    margin: 2px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 767px) {
+
+    .student-crud-container {
+        padding: 10px;
+    }
+
+    .student-form-col,
+    .student-table-col {
+        padding: 8px;
+    }
+
+    .student-form-header h3 {
+        font-size: 18px;
+    }
+
+    .student-form-body {
+        padding: 18px;
+    }
+
+    .student-table-body {
+        padding: 12px;
+    }
+
+    .student-table {
+        min-width: 650px;
+    }
+}
